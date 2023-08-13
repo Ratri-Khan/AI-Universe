@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-universe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7bfaf4674a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container m-auto">
+<header class="bg-slate-950 m-auto text-white text-center">
+    <h1 class="text-3xl">AI Universe Hub</h1>
+    <button class="bg-white text-black px-5 py-3 my-7 font-bold rounded">Sort By Date
+    </button>
+</header>
+<main>
+  <section class="m-auto bg-slate-950">
+    <!--hubs container-->
+    <div class="grid grid-cols-3 gap-4 container" id="hubs-container"></div>
+
+<!--modal-->
+  <div class="modal fade" id="hubDetailsModal" tabindex="-1" aria-labelledby="hubDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">        
+          <!-- <button type="button" class="btn-close w-14" data-bs-dismiss="modal" aria-label="Close">
+          <img src="images/cross.png" alt=""></button> -->
+          <button type="button" class="btn btn-secondary closebtn" data-bs-dismiss="modal">
+            <i class="fas fa-times"></i>
+         </button>
+        
+        <div class="modal-body" id="modal-body"></div>      
+      </div>
+    </div>
+  </div>
+      
+  </section>
+</main>
+<footer></footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+<script src="univers.js"></script>
+</body>
+</html>
