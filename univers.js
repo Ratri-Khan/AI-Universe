@@ -1,4 +1,5 @@
 const loadHubs = () =>{
+    toggleSpinner(true);
     fetch(`https://openapi.programming-hero.com/api/ai/tools`)
     .then(res=>res.json())
     .then(data => displayLoadHubs(data.data.tools))
@@ -28,7 +29,21 @@ const displayLoadHubs = (hubs) =>{
     `
     hubsContainer.appendChild(hubDiv);
 })
+toggleSpinner(false);
 }
+
+const toggleSpinner = loader =>{
+    const spinner = document.getElementById('loader-section');
+    if(loader == true){
+        spinner.classList.remove('hidden');
+    }
+    else{
+        spinner.classList.add('hidden');
+    }
+}
+
+
+
 
 const HubDetails =(id)=>{
     fetch(`https://openapi.programming-hero.com/api/ai/tool/${id}`)

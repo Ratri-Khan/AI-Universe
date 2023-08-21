@@ -12,7 +12,7 @@
 <body class="container m-auto">
 <header class="bg-slate-950 m-auto text-white text-center">
     <h1 class="text-3xl">AI Universe Hub</h1>
-    <button class="bg-white text-black px-5 py-3 my-7 font-bold rounded">Sort By Date
+    <button class="bg-white text-black px-5 py-2 my-7 font-bold rounded">Sort By Date
     </button>
 </header>
 <main>
@@ -24,17 +24,42 @@
   <div class="modal fade" id="hubDetailsModal" tabindex="-1" aria-labelledby="hubDetailsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">        
-          <!-- <button type="button" class="btn-close w-14" data-bs-dismiss="modal" aria-label="Close">
-          <img src="images/cross.png" alt=""></button> -->
-          <button type="button" class="btn btn-secondary closebtn" data-bs-dismiss="modal">
-            <i class="fas fa-times"></i>
-         </button>
+          <div class="text-right">
+            <button type="button" class="btn btn-secondary closebtn border-0 w-1/12 text-center rounded-full p-0 hover:bg-violet-600  text-6xl" data-bs-dismiss="modal">
+              <i class="fas fa-times text-black"></i>
+           </button>
+          </div>
         
         <div class="modal-body" id="modal-body"></div>      
       </div>
     </div>
-  </div>
-      
+  </div>    
+  </section>
+  <!--For Spinner Part--><!--For Spinner Part-->
+  <section>
+    <div class="text-center hidden" id="loader-section">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>   
+     </div>
   </section>
 </main>
 <footer></footer>
