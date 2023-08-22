@@ -55,11 +55,11 @@ const displayHubDetails = (hub) =>{
     console.log(hub);
     const modalBody = document.getElementById('modal-body');
     modalBody.innerHTML=`
-    <div class='flex'>
-       
-       <div class='w-2/4 p-5'>
+    <div class='md:flex'>
+       <div class='md:w-2/4'><img src='${hub.image_link[0]}'></div>
+       <div class='md:w-2/4 p-5'>
           <p class='text-3xl'>${hub.description}</p>
-         <div class='flex justify-between my-4'>
+         <div class='md:flex md:justify-between my-4'>
             <div class='border-4 border-cyan-400 p-3 text-center'>
                 <p> ${hub.pricing[0].price}</p>
                 <p> ${hub.pricing[0].plan}</p>
@@ -88,7 +88,7 @@ const displayHubDetails = (hub) =>{
            </ul>
          </div>
      </div>
-     <div class='w-2/4'><img src='${hub.image_link[0]}'></div>
+     
     </div>
     `
 }
